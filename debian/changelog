@@ -1,3 +1,15 @@
+rtl8821ce (1.0.1) lernstick-9; urgency=medium
+
+  * [096f7c] revert fix for Linux 5.0 (we are still running 4.19.x)
+  * [a58d9d] fixed TopDIR variable setting
+  * [dde691] fixed dkms file
+  * [27a1ac] updated gitignore file
+  * [befacb] use dkms variable $kernelver instead of uname to get correct
+             kernel version
+             (this way we can have a different kernel in build host and chroot)
+
+ -- Ronny Standtke <ronny.standtke@gmx.net>  Mon, 22 Apr 2019 20:11:48 +0200
+
 rtl8821ce (1.0.0) lernstick-9; urgency=medium
 
   * Initial release.
