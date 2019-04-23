@@ -6,5 +6,5 @@ Build-Depends: debhelper (>= 9), dkms
 
 Package: rtl8821ce-dkms
 Architecture: all
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, bc
 Description: DKMS source for the rtl8821ce driver
