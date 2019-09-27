@@ -1,10 +1,10 @@
-Source: rtl8821ce
+Source: rtl8821ce-5.2
 Section: kernel
 Priority: optional
 Maintainer: Ronny Standtke <ronny.standtke@gmx.net>
 Build-Depends: debhelper (>= 9), dkms
 
-Package: rtl8821ce-dkms
+Package: rtl8821ce-5.2-dkms
 Architecture: all
 Depends: ${misc:Depends}, bc
-Description: DKMS source for the rtl8821ce driver
+Description: DKMS source for the rtl8821ce driver (for Linux Kernel 5.2 and above)
