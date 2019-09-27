@@ -1,3 +1,12 @@
+rtl8821ce-5.2 (1.0.3) lernstick-10; urgency=medium
+
+  * [8827ef] correctly renamed dkms file
+  * [f96b73] new upstream release
+  * [4f8844] updated .gitignore file
+  * [0a65a2] fix build directories for dkms
+
+ -- Ronny Standtke <ronny.standtke@gmx.net>  Fri, 27 Sep 2019 09:56:22 +0200
+
 rtl8821ce (1.0.2) lernstick-9; urgency=medium
 
   * [94890b] added dependency to bc (used in Makefile)
