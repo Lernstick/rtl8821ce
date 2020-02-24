@@ -1,3 +1,11 @@
+rtl8821ce-5.4 (1) lernstick-10; urgency=medium
+
+  * [69ff1c] new upstream version
+  * [cf1409] updated readme and debian files
+  * [753529] updated .gitignore file
+
+ -- Ronny Standtke <ronny.standtke@gmx.net>  Mon, 24 Feb 2020 15:59:17 +0100
+
 rtl8821ce-5.2 (1.0.3) lernstick-10; urgency=medium
 
   * [8827ef] correctly renamed dkms file
