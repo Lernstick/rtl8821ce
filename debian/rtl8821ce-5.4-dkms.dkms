@@ -1,8 +1,22 @@
+# Modified version that is provided by the Canonical HWE Team
+# Source https://launchpad.net/ubuntu/+source/rtl8821ce
 PACKAGE_NAME="rtl8821ce"
 PACKAGE_VERSION="#MODULE_VERSION#"
-CLEAN="make clean"
-MAKE[0]="KVERSION=$kernelver make"
-BUILT_MODULE_NAME[0]="8821ce"
+BUILT_MODULE_NAME[0]="$PACKAGE_NAME"
 DEST_MODULE_LOCATION[0]="/updates"
-AUTOINSTALL="yes"
+AUTOINSTALL="YES"
 REMAKE_INITRD="yes"
+
+# Find out how many CPU cores can be use if we pass appropriate -j option to make.
+# DKMS could use all cores on multicore systems to build the kernel module.
+num_cpu_cores()
+{
+  if [ -x /usr/bin/nproc ]; then
+    nproc
+  else
+    echo "1"
+  fi
+}
+
+MAKE="'make' -j$(num_cpu_cores) KVER=$kernelver USER_MODULE_NAME=$PACKAGE_NAME CONFIG_RTW_DEBUG=n"
+CLEAN="'make' clean"
