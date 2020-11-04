@@ -1,4 +1,4 @@
-rtl8821ce-5.8 (2) lernstick-10; urgency=medium
+rtl8821ce-5.8 (1) lernstick-10; urgency=medium
 
   * [084f90] updated debian maintainer files
   * [c21e1a] updates for Linux kernel v5.8
